@@ -1,0 +1,35 @@
+<div id="stsw-settings" class="stsw-settings inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+        <b>Sound Words</b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+
+    <div class="inline-drawer-content">
+        <div class="stsw-help">
+            Add words or phrases and associate one or more audio files with them. When a matching occurrence appears in the chat, it becomes clickable; tapping it plays a random file from the list.
+            Audio files are stored in this device’s browser storage.
+        </div>
+
+        <div class="stsw-toolbar">
+            <label>
+                <input id="stsw-enabled" type="checkbox">
+                Enable sounds on matching words
+            </label>
+            <label>
+                <input id="stsw-include-user" type="checkbox">
+                Include my messages
+            </label>
+            <label>
+                <input id="stsw-overlap" type="checkbox">
+                Allow simultaneous sounds
+            </label>
+        </div>
+
+        <div class="stsw-toolbar">
+            <button id="stsw-add-entry" type="button" class="menu_button">＋ Add word</button>
+            <button id="stsw-stop-all" type="button" class="menu_button">■ Stop all sounds</button>
+        </div>
+
+        <div id="stsw-entries" class="stsw-entries"></div>
+    </div>
+</div>

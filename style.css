@@ -1,0 +1,188 @@
+#stsw-settings {
+    margin-top: 8px;
+}
+
+#stsw-settings .stsw-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#stsw-settings .stsw-toolbar label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+#stsw-settings .stsw-help {
+    opacity: 0.78;
+    font-size: 0.9em;
+    line-height: 1.35;
+    margin: 6px 0 12px;
+}
+
+#stsw-settings .stsw-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#stsw-settings .stsw-entry {
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--black30a);
+}
+
+#stsw-settings .stsw-entry-top {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) minmax(160px, 220px) minmax(150px, 220px) auto auto;
+    gap: 8px;
+    align-items: end;
+}
+
+#stsw-settings .stsw-word-input-wrap,
+#stsw-settings .stsw-mode-wrap,
+#stsw-settings .stsw-volume-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+#stsw-settings .stsw-word-input-wrap > label,
+#stsw-settings .stsw-mode-wrap > label,
+#stsw-settings .stsw-volume-wrap > label {
+    display: block;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+/* Deliberately explicit: keeps this field visible even if a global ST/user CSS rule targets inputs. */
+#stsw-settings input.stsw-word-input {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 8px 10px !important;
+    border: 1px solid var(--SmartThemeBorderColor) !important;
+    border-radius: 5px !important;
+    cursor: text !important;
+    pointer-events: auto !important;
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    font-size: 1em !important;
+    line-height: normal !important;
+}
+
+#stsw-settings input.stsw-word-input:focus {
+    outline: 2px solid var(--SmartThemeQuoteColor, currentColor) !important;
+    outline-offset: 1px !important;
+}
+
+#stsw-settings .stsw-volume {
+    width: 100%;
+}
+
+#stsw-settings .stsw-files-head {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#stsw-settings .stsw-file-picker {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+#stsw-settings .stsw-files {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 7px;
+}
+
+#stsw-settings .stsw-file {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto auto;
+    gap: 5px;
+    align-items: center;
+    padding: 4px 0;
+}
+
+#stsw-settings .stsw-file-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#stsw-settings .stsw-file-size,
+#stsw-settings .stsw-empty {
+    opacity: 0.65;
+    font-size: 0.85em;
+}
+
+#stsw-settings .stsw-empty-big {
+    padding: 10px;
+    text-align: center;
+    border: 1px dashed var(--SmartThemeBorderColor);
+    border-radius: 8px;
+}
+
+.stsw-word {
+    cursor: pointer;
+    border-bottom: 1px dotted currentColor;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.stsw-word:hover,
+.stsw-word:focus {
+    text-decoration: underline;
+    filter: brightness(1.2);
+    outline: none;
+}
+
+.stsw-word:active {
+    transform: translateY(1px);
+}
+
+#stsw-settings .stsw-mode-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+#stsw-settings .stsw-match-mode {
+    width: 100%;
+    min-height: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    #stsw-settings .stsw-entry-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #stsw-settings .stsw-entry-top {
+        grid-template-columns: 1fr;
+    }
+}
