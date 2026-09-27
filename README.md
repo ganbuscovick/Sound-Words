@@ -18,9 +18,7 @@ On mobile, if the audio controls do not appear correctly while using landscape m
 
 Screenshots
 
-"Settings" (screenshots/settings.png)
-
-"In-chat triggers" (screenshots/chat.png)
+(screenshots/Screenshot_20260926_205219_Firefox Nightly.jpg)
 
 Notes
 
