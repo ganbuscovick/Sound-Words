@@ -20,6 +20,12 @@ Screenshots
 
 (screenshots/Screenshot_20260926_205219_Firefox Nightly.jpg)
 
+(screenshots/Screenshot_20260926_205238_Firefox Nightly.jpg)
+
+(screenshots/Screenshot_20260926_205249_Firefox Nightly.jpg)
+
+(screenshots/Screenshot_20260926_205513_Firefox Nightly.jpg)
+
 Notes
 
 This project was created through vibecoding. I do not plan to release further updates.
