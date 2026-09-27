@@ -61,7 +61,7 @@ On mobile, if the audio controls do not appear correctly while using **landscape
 
 ## 📸 Screenshots
 
-![Sound Words settings](./Screenshot_20260926_205219_Firefox%20Nightly.jpg)
+![Sound Words settings](screenshots/Screenshot_20260926_205219_Firefox Nightly.jpg)
 
 ![Sound Words settings](./Screenshot_20260926_205238_Firefox%20Nightly.jpg)
 
